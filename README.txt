@@ -1,30 +1,106 @@
-Movielens 100k Dataset Summary
-=======
+# Recommendation System for Movies
 
-This dataset (ml-latest-small) describes 5-star rating and free-text tagging activity from [MovieLens](http://movielens.org), a movie recommendation service. It contains 100836 ratings and 3683 tag applications across 9742 movies. These data were created by 610 users between March 29, 1996 and September 24, 2018. This dataset was generated on September 26, 2018.
+Welcome to the **Recommendation System for Movies** project! This repository contains a comprehensive system for recommending movies to users based on their preferences, viewing history, and various machine learning algorithms.
 
-Users were selected at random for inclusion. All selected users had rated at least 20 movies. No demographic information is included. Each user is represented by an id, and no other information is provided.
+## Table of Contents
 
-The data are contained in the files `links.csv`, `movies.csv`, `ratings.csv` and `tags.csv`. More details about the contents and use of all these files follows.
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Data](#data)
+- [Algorithms Used](#algorithms-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-This is a *development* dataset. As such, it may change over time and is not an appropriate dataset for shared research results. See available *benchmark* datasets if that is your intent.
+---
 
-This and other GroupLens data sets are publicly available for download at <http://grouplens.org/datasets/>.
-And the download link for the dataset we used is this <https://files.grouplens.org/datasets/movielens/ml-latest-small.zip>
+## Project Overview
 
-Files
-=======
+This project aims to provide personalized movie recommendations using a variety of recommendation algorithms. It leverages user ratings, movie metadata, and collaborative filtering techniques to suggest movies that users are likely to enjoy.
 
-* EDA.ipynb: Exploratory Data Analysis for the Movielens Dataset
-* Final_Project_Report.pdf: Final Report
-* Collaborative_Filtering_Team-K.ipynb: Manual User-Based Collaborative Filtering implementation
-* surprise_user_based.py: Surprise Library User-Based Collaborative Filtering
-* surprise_item_based.py: Surprise Library Item-Based Collaborative Filtering
-* svd.py: Matrix Factorization (SVD) Collaborative Filtering
-* Hybrid_Recommendation_model.ipynb: Hybrid Recommendation implementation
-* NN_Recommendation_System_Models.ipynb: All our Keras NN models
+## Features
 
-**.ipynb files: We use Google Colab for our Notebooks
-**.py: Our py files were run on the Spyder IDE
+- Personalized movie recommendations
+- User-based and item-based collaborative filtering
+- Content-based filtering using movie metadata
+- Hybrid recommendation strategies
+- Data visualization of ratings and recommendations
+- Easy-to-use interface (CLI or Web, depending on implementation)
 
+## Data
 
+The system is designed to work with popular movie datasets such as [MovieLens](https://grouplens.org/datasets/movielens/). The datasets typically include:
+
+- User ratings
+- Movie details (title, genres, release year, etc.)
+- Optional: Tags, links, and additional metadata
+
+## Algorithms Used
+
+- **Collaborative Filtering**:  
+  - User-User Similarity
+  - Item-Item Similarity
+
+- **Content-Based Filtering**:
+  - Uses movie metadata (genres, tags, etc.)
+
+- **Hybrid Approaches**:
+  - Combining collaborative and content-based methods for improved recommendations
+
+- **Additional Models** (optional):
+  - Matrix Factorization (SVD)
+  - Deep Learning (if applicable)
+
+## Installation
+
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/lkollimenos01/Recommendation-System-for-Movies.git
+    cd Recommendation-System-for-Movies
+    ```
+
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3. Download the dataset(s) as instructed in the [Data](#data) section.
+
+## Usage
+
+- Run the main script to start generating recommendations:
+    ```bash
+    python main.py
+    ```
+- Follow any prompts to select users or movies of interest.
+- Explore the recommendation results and visualizations.
+
+## Project Structure
+
+```
+Recommendation-System-for-Movies/
+├── data/                 # Datasets
+├── src/                  # Source code
+│   ├── models/           # Recommendation algorithms
+│   ├── utils/            # Utility functions
+│   └── ...               # Other modules
+├── requirements.txt      # Python dependencies
+├── main.py               # Entry point
+└── README.md             # Project documentation
+```
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for new features, bug fixes, or improvements.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+### Contact
+
+For questions or suggestions, feel free to reach out to [lkollimenos01](https://github.com/lkollimenos01).
